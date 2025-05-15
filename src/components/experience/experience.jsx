@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './experience.css';
 import image from '../../assets/images/ex1.png';
 import logo from '../../assets/images/sitelogo.jpg';
-import logo1 from '../../assets/images/codeBetter.png';
+import logo1 from '../../assets/images/CodeBetter.png';
 import infosys from '../../assets/images/infosys.png';
 
 const WorkExperience = () => {
