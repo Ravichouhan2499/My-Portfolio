@@ -52,7 +52,7 @@ const ContactCard = () => {
           
           {/* Resume Button */}
           <div className="resume-button-container">
-            <a href="/certificate/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
+            <a href="/certificate/resume2.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
   See My Resume
 </a>
           </div>
