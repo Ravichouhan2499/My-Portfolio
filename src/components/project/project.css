@@ -1,0 +1,142 @@
+.project-experience-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fdfdfd;
+  font-family: 'Arial', sans-serif;
+  margin-top: 80px;
+}
+
+.project-left-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.project-illustration-image {
+  max-width: 90%;
+  height: auto;
+}
+
+.project-right-content {
+  flex: 1;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-section-title {
+  color: #102a43;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-section-header:hover {
+  background-color: #eef6ff;
+}
+
+.project-section-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.project-expand-icon {
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.project-expand-icon.expanded {
+  transform: rotate(180deg);
+}
+
+.project-cards {
+  animation: projectFadeIn 0.5s ease-in-out;
+}
+
+.project-card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.project-logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.25rem;
+}
+
+.project-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.project-details {
+  flex: 1;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.project-header h3 {
+  margin: 0;
+  color: #0b3d91;
+}
+
+.project-duration {
+  color: #777;
+  font-size: 0.875rem;
+}
+
+.project-tech {
+  font-weight: bold;
+  color: #007acc;
+  margin-bottom: 0.25rem;
+}
+
+.project-description {
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@keyframes projectFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
