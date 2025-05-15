@@ -43,10 +43,11 @@ export default function Navbar() {
         </div>
         
         <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className={isMenuOpen ? 'line1-active' : ''}></span>
+          <span className={isMenuOpen ? 'line2-active' : ''}></span>
+          <span className={isMenuOpen ? 'line3-active' : ''}></span>
         </div>
+        
         
           <ul className={`navbar-menu ${isMenuOpen ? 'menu-open' : ''}`}>
           {[
