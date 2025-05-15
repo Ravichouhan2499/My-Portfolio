@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CollegeLogo from '../../assets/images/collegeLogo.png';
-import CodeBetter from '../../assets/images/codeBetter.png';
+import CodeBetter from '../../assets/images/CodeBetter.png';
 import Universal from '../../assets/images/universal.png';
 import infosys from '../../assets/images/infosys.png';
 import cap from '../../assets/images/capp.png';
