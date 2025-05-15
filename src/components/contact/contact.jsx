@@ -2,7 +2,7 @@ import React from "react";
 import "./contact.css";
 import { FaFacebookF, FaGithub, FaGoogle, FaInstagram, FaLinkedinIn, FaTelegram } from "react-icons/fa";
 import address from "../../assets/images/address.png";
-import profile from "../../assets/images/profile.jpg";
+import profile from "../../assets/images/Profile.jpg";
 
 const ContactCard = () => {
   return (
