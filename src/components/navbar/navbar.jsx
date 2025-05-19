@@ -33,6 +33,10 @@ export default function Navbar() {
     }
   };
 
+   const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container">
@@ -63,7 +67,8 @@ export default function Navbar() {
             >
               <Link 
                 to={item.path} 
-                onClick={() => handleNavClick(item.name)}
+                onClick={() => [handleNavClick(item.name), handleLinkClick()]}
+                on
               >
                 {item.name}
               </Link>

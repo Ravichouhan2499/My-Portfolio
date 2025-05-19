@@ -22,9 +22,7 @@ const ContactCard = () => {
         <div className="contact-header">
           <h1>Contact Me</h1>
           <p className="contact-subtitle">
-            I am available on almost every social media. You can message me, I will
-            reply within 24 hours. I can help you with Java, Front end, React,
-            Backend and databases.
+           I'm active on most major social media platforms and typically respond within 24 hours. Feel free to reach out — I'm happy to assist with Java, front-end development, React, back-end systems, and databases.
           </p>
           
           {/* Social Media Icons */}

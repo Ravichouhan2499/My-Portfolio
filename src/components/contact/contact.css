@@ -1,6 +1,5 @@
 /* ContactCard.css */
 
-
 /* Main container */
 .contact-card {
   max-width: 1200px;
@@ -60,12 +59,12 @@
   margin-bottom: 2rem;
 }
 
-/* Socail Icons */
-
+/* Social Icons */
 .social-icons-container-1 {
   display: flex;
   gap: 18px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .social-icon {
@@ -82,7 +81,6 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   text-decoration: none;
 }
-
 
 /* Hover with individual platform colors */
 .social-icon.github {
@@ -125,8 +123,6 @@
   color: white;
   box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
 }
-
-
 
 /* Resume button */
 .resume-button-container {
@@ -177,9 +173,10 @@
 
 .address-image {
   width: 100%;
-  height: 80%;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 /* Right section - Contact information */
@@ -258,7 +255,17 @@
   font-size: 1.2rem;
 }
 
-/* Responsive design */
+/* Enhanced Responsive design */
+@media screen and (max-width: 1200px) {
+  .contact-card {
+    max-width: 95%;
+  }
+  
+  .contact-top-section {
+    gap: 3rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .contact-header h1 {
     font-size: 2.2rem;
@@ -267,13 +274,41 @@
   .contact-subtitle {
     font-size: 1rem;
   }
+  
+  .contact-top-section {
+    gap: 2.5rem;
+  }
+  
+  .profile-image-container {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .profile-image-container {
+    max-width: 280px;
+  }
+  
+  .contact-top-section {
+    gap: 2rem;
+  }
+  
+  .contact-bottom-section {
+    gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .contact-card {
+    padding: 2.5rem 1.2rem;
+    margin-top: 60px;
+  }
+  
   .contact-top-section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 2rem;
   }
   
   .profile-image-container {
@@ -284,7 +319,7 @@
     text-align: center;
   }
   
-  .social-icons {
+  .social-icons-container-1 {
     justify-content: center;
   }
   
@@ -306,15 +341,52 @@
     order: 1;
   }
   
-  .envelope-wrapper {
-    width: 180px;
-    height: 150px;
+  .envelope-container {
+    max-width: 250px;
+  }
+  
+  .info-section h2:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .info-section {
+    text-align: center;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact-card {
+    padding: 2rem 1rem;
+    margin-top: 50px;
+  }
+  
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .profile-image-container {
+    max-width: 200px;
+  }
+  
+  .social-icons-container-1 {
+    gap: 15px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .contact-card {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
   }
   
   .contact-header h1 {
@@ -322,13 +394,9 @@
   }
   
   .social-icon {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .social-icon svg {
-    width: 18px;
-    height: 18px;
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
   }
   
   .resume-button {
@@ -339,5 +407,55 @@
   .map-button {
     padding: 10px 16px;
     font-size: 0.9rem;
+  }
+  
+  .info-section h2 {
+    font-size: 1.2rem;
+  }
+  
+  .phone {
+    font-size: 1rem !important;
+  }
+  
+  .info-section p {
+    font-size: 0.95rem;
+  }
+  
+  .contact-info {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .profile-image-container {
+    max-width: 180px;
+  }
+  
+  .contact-header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .contact-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .social-icons-container-1 {
+    gap: 12px;
+  }
+  
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+  
+  .resume-button {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+  
+  .map-button {
+    padding: 8px 14px;
+    font-size: 0.85rem;
   }
 }
